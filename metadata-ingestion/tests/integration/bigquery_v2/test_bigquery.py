@@ -505,8 +505,6 @@ def test_bigquery_queries_v2_lineage_usage_ingest(
             "session_id": None,
             "query_hash": None,
             "statement_type": "SELECT",
-            "destination_table": None,
-            "referenced_tables": None,
         },
         {
             "job_id": "2",
@@ -517,8 +515,6 @@ def test_bigquery_queries_v2_lineage_usage_ingest(
             "session_id": None,
             "query_hash": None,
             "statement_type": "CREATE",
-            "destination_table": None,
-            "referenced_tables": None,
         },
         {
             "job_id": "3",
@@ -533,8 +529,6 @@ LIMIT 100
             "session_id": None,
             "query_hash": None,
             "statement_type": "SELECT",
-            "destination_table": None,
-            "referenced_tables": None,
         },
         {
             "job_id": "4",
@@ -549,8 +543,6 @@ LIMIT 100
             "session_id": None,
             "query_hash": None,
             "statement_type": "SELECT",
-            "destination_table": None,
-            "referenced_tables": None,
         },
     ]
 
@@ -737,16 +729,14 @@ def test_bigquery_convert_column_urns_to_lowercase(
             "creation_time": datetime.now(timezone.utc),
             "user_email": "test@example.com",
             "query": f"""CREATE TABLE `{dataset_name}.{derived_table_name}` AS
-            SELECT 
+            SELECT
               UserID,
               CONCAT(EmailAddress, '@transformed.com') AS TransformedEmail
-            FROM 
+            FROM
               `{dataset_name}.{table_name}`""",
             "session_id": None,
             "query_hash": None,
             "statement_type": "CREATE_TABLE_AS_SELECT",
-            "destination_table": f"{dataset_name}.{derived_table_name}",
-            "referenced_tables": f"{dataset_name}.{table_name}",
         }
     ]
 

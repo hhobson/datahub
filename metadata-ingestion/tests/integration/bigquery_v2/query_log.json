@@ -10,13 +10,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "15e12d10-ecd2-49df-9265-15e1d13063f2",
-      "statement_type": "CREATE_TABLE",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "smoke_test_db",
-        "table_id": "usage_test"
-      },
-      "referenced_tables": []
+      "statement_type": "CREATE_TABLE"
     }
   },
   {
@@ -30,19 +24,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "74e32b90-4099-463d-94c8-d7dee843cfa4",
-      "statement_type": "INSERT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "smoke_test_db",
-        "table_id": "usage_test"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "usage_test"
-        }
-      ]
+      "statement_type": "INSERT"
     }
   },
   {
@@ -56,13 +38,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "194dff44-329f-49e6-82f0-865c06c223ba",
-      "statement_type": "CREATE_TABLE",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "smoke_test_db",
-        "table_id": "partition_test"
-      },
-      "referenced_tables": []
+      "statement_type": "CREATE_TABLE"
     }
   },
   {
@@ -76,19 +52,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "56e06ba7-a054-4100-a0e3-d7d5c7a32d7e",
-      "statement_type": "INSERT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "smoke_test_db",
-        "table_id": "partition_test"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "partition_test"
-        }
-      ]
+      "statement_type": "INSERT"
     }
   },
   {
@@ -102,13 +66,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "d7ef294f-8776-4d12-adc8-dd9de5acda16",
-      "statement_type": "CREATE_TABLE",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "smoke_test_db",
-        "table_id": "base_table"
-      },
-      "referenced_tables": []
+      "statement_type": "CREATE_TABLE"
     }
   },
   {
@@ -122,19 +80,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "027cb80d-d2f8-4ef7-931b-c2ba70d0acb1",
-      "statement_type": "INSERT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "smoke_test_db",
-        "table_id": "base_table"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "base_table"
-        }
-      ]
+      "statement_type": "INSERT"
     }
   },
   {
@@ -148,19 +94,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "47449db3-409f-4518-95fb-bbe986ff82cc",
-      "statement_type": "CREATE_TABLE_AS_SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_smoke_test_db_tmp_tables",
-        "table_id": "tmp_table"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "base_table"
-        }
-      ]
+      "statement_type": "CREATE_TABLE_AS_SELECT"
     }
   },
   {
@@ -174,19 +108,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "b583ade6-98f9-4323-909e-4b16678f7aaf",
-      "statement_type": "CREATE_TABLE_AS_SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "smoke_test_db",
-        "table_id": "lineage_from_tmp_table"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "_smoke_test_db_tmp_tables",
-          "table_id": "tmp_table"
-        }
-      ]
+      "statement_type": "CREATE_TABLE_AS_SELECT"
     }
   },
   {
@@ -200,19 +122,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "953e6ea0-99b4-43dc-b27a-5eefa8cfb1ca",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon77d4fd91_539c_4f4e_9fee_b78ad8c277ea"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -226,13 +136,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "92088ca0-f8a7-416b-a6c9-dbfc734d59a6",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon60e011141b8e3c85fb386e55d995a8290fc3a0896c26ac6d5717f14f5f163947"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -246,13 +150,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "ef29f16d-9db8-47fc-bc3a-fdc11fdbd138",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon4db3da963edf09d1d3e6b8dddc9f22960bb56016490ef27620acc390fcf18a27"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -266,13 +164,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "c572ae0c-c77d-4f72-9284-be1b1fa8d401",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon84323ce6f50f99cfc5d2e8ad640f3923743cb41a6a759f18a7fce13c7a358d28"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -286,13 +178,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "0d12200c-aefe-42cf-92b9-c3e728cc5e2c",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon60e011141b8e3c85fb386e55d995a8290fc3a0896c26ac6d5717f14f5f163947"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -306,19 +192,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "9ac780d2-ce9a-487e-b5b0-fa50c534600f",
-      "statement_type": "CREATE_TABLE_AS_SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "smoke_test_db",
-        "table_id": "lineage_from_base"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "base_table"
-        }
-      ]
+      "statement_type": "CREATE_TABLE_AS_SELECT"
     }
   },
   {
@@ -332,19 +206,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "60d848ac-1fcd-4def-a81b-c08b0166b5c5",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon5af5d332_c8eb_4525_a078_3c31668e4a6b"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -358,13 +220,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "9eb7efff-67d8-48e4-a4dd-73e7a72e6ce5",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonb22d0d582afd566e08144b196aec36622576fdf25b6e74a35e044a5b720ce191"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -378,19 +234,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "78284ace-bd28-4a53-a476-cfc86db51919",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonbafa243d_7625_4485_a27d_6ca94e711867"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -404,13 +248,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "29cb5356-e155-4f88-b79b-d9d7bb2ff47f",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon84323ce6f50f99cfc5d2e8ad640f3923743cb41a6a759f18a7fce13c7a358d28"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -424,13 +262,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "bf6998d0-0984-4d09-80c2-d6167f0bd5be",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon4db3da963edf09d1d3e6b8dddc9f22960bb56016490ef27620acc390fcf18a27"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -444,19 +276,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "4274ea3c-97f4-46eb-95f7-57f801b9643f",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anona67fc478_bd01_4230_9fbd_ec017a318330"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -470,19 +290,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "3dee2d9b-8a0a-4f85-a953-19bb77d6e5bf",
-      "statement_type": "CREATE_VIEW",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "smoke_test_db",
-        "table_id": "view_from_table"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "base_table"
-        }
-      ]
+      "statement_type": "CREATE_VIEW"
     }
   },
   {
@@ -496,13 +304,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "ba08fe4a-a50c-4485-a00a-37b6eba7e98a",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon4db3da963edf09d1d3e6b8dddc9f22960bb56016490ef27620acc390fcf18a27"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -516,13 +318,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "3bba8392-5644-4565-a283-01b7ef199138",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon32e6bd0458339a10581928d131db191eaea3e29936a3454e7946ed8a12f17e38"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -536,13 +332,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "b88614c8-d56f-42fd-8d33-0bbdf082e396",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon84323ce6f50f99cfc5d2e8ad640f3923743cb41a6a759f18a7fce13c7a358d28"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -556,19 +346,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "cebf6f8d-bb13-41ef-816d-9292eac62cc5",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anondf074cd5_822f_45ff_aa5a_cb4d4d69b71b"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -582,19 +360,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "d398a69a-f4ba-4e81-b591-871152fb9a03",
-      "statement_type": "CREATE_VIEW",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "smoke_test_db",
-        "table_id": "view_from_view_on_table"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "base_table"
-        }
-      ]
+      "statement_type": "CREATE_VIEW"
     }
   },
   {
@@ -608,13 +374,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "5bbb3cfd-a62c-4a36-b15f-a207d89e2c62",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon4db3da963edf09d1d3e6b8dddc9f22960bb56016490ef27620acc390fcf18a27"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -628,13 +388,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "55dabfc7-a89e-47a6-a065-965c6dafb47e",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon60e011141b8e3c85fb386e55d995a8290fc3a0896c26ac6d5717f14f5f163947"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -648,19 +402,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "0b71e40e-fe16-4f70-8173-db68f89787e3",
-      "statement_type": "CREATE_TABLE_AS_SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "smoke_test_db",
-        "table_id": "table_from_view"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "base_table"
-        }
-      ]
+      "statement_type": "CREATE_TABLE_AS_SELECT"
     }
   },
   {
@@ -674,13 +416,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "dcf62ed3-098b-4e8f-afd0-62297db76b05",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon84323ce6f50f99cfc5d2e8ad640f3923743cb41a6a759f18a7fce13c7a358d28"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -694,19 +430,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "56ee02b5-9e75-4acd-be96-19aee59af431",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon14ea5eb6_003f_40a7_ad6f_44dd1bad7026"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -720,19 +444,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "ea311635-bb0a-4216-a68d-81bc87ec6e89",
-      "statement_type": "CREATE_TABLE_AS_SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "smoke_test_db_2",
-        "table_id": "table_from_other_db"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "base_table"
-        }
-      ]
+      "statement_type": "CREATE_TABLE_AS_SELECT"
     }
   },
   {
@@ -746,19 +458,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "bd00bc76-81b9-4a1c-8bc9-f28e333cdae4",
-      "statement_type": "CREATE_SNAPSHOT_TABLE",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "smoke_test_db",
-        "table_id": "snapshot_from_table"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "base_table"
-        }
-      ]
+      "statement_type": "CREATE_SNAPSHOT_TABLE"
     }
   },
   {
@@ -772,19 +472,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "12ed5ed0-38c6-428c-99d0-d230b140dd1f",
-      "statement_type": "CREATE_VIEW",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "smoke_test_db",
-        "table_id": "view_from_snapshot_on_table"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "snapshot_from_table"
-        }
-      ]
+      "statement_type": "CREATE_VIEW"
     }
   },
   {
@@ -798,24 +486,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "955a444b-e9ef-44e4-9cc6-2a93e16a8eb0",
-      "statement_type": "CREATE_TABLE_AS_SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "smoke_test_db",
-        "table_id": "table_from_view_and_table"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "base_table"
-        },
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "base_table"
-        }
-      ]
+      "statement_type": "CREATE_TABLE_AS_SELECT"
     }
   },
   {
@@ -829,13 +500,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "script_job_7ca68f4489c9b94df86a90933cfa7886_0",
-      "statement_type": "DROP_MATERIALIZED_VIEW",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "smoke_test_db",
-        "table_id": "materialized_view_from_table"
-      },
-      "referenced_tables": []
+      "statement_type": "DROP_MATERIALIZED_VIEW"
     }
   },
   {
@@ -849,19 +514,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "script_job_034cd994c0ae9fb720f91dabfde3149b_1",
-      "statement_type": "CREATE_MATERIALIZED_VIEW",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "smoke_test_db",
-        "table_id": "materialized_view_from_table"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "base_table"
-        }
-      ]
+      "statement_type": "CREATE_MATERIALIZED_VIEW"
     }
   },
   {
@@ -875,13 +528,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "dd349313-36b1-4607-914c-94df425773a2",
-      "statement_type": "CREATE_TABLE",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "smoke_test_db_3",
-        "table_id": "base_table_2"
-      },
-      "referenced_tables": []
+      "statement_type": "CREATE_TABLE"
     }
   },
   {
@@ -895,19 +542,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "f4971ee8-f969-4d7c-8744-7b4ce66c29b4",
-      "statement_type": "CREATE_TABLE_AS_SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "smoke_test_db",
-        "table_id": "table_from_another_project"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "smoke_test_db_3",
-          "table_id": "base_table_2"
-        }
-      ]
+      "statement_type": "CREATE_TABLE_AS_SELECT"
     }
   },
   {
@@ -921,19 +556,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "5a335e2b-0a28-4ac6-9138-c103ad3193bc",
-      "statement_type": "CREATE_TABLE_AS_SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "smoke_test_db_3",
-        "table_id": "derived_table"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "smoke_test_db_3",
-          "table_id": "base_table_2"
-        }
-      ]
+      "statement_type": "CREATE_TABLE_AS_SELECT"
     }
   },
   {
@@ -947,39 +570,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "8fa83df5-e0ca-449e-a11e-4f5789e67e8e",
-      "statement_type": "CREATE_VIEW",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "smoke_test_db",
-        "table_id": "view_from_multiple_tables"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "base_table"
-        },
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "base_table"
-        },
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "materialized_view_from_table"
-        },
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "lineage_from_base"
-        },
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db_2",
-          "table_id": "table_from_other_db"
-        }
-      ]
+      "statement_type": "CREATE_VIEW"
     }
   },
   {
@@ -993,19 +584,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "def72ad2-7f1e-4d39-a2d9-e2e49984dd9a",
-      "statement_type": "CREATE_TABLE_AS_SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "smoke_test_db_4",
-        "table_id": "sharded_table1_20230101"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db_2",
-          "table_id": "table_from_other_db"
-        }
-      ]
+      "statement_type": "CREATE_TABLE_AS_SELECT"
     }
   },
   {
@@ -1019,19 +598,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "1647e16c-5a81-4b25-852f-ae08e25c18b4",
-      "statement_type": "CREATE_TABLE_AS_SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "smoke_test_db_4",
-        "table_id": "sharded_table1_20230201"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db_2",
-          "table_id": "table_from_other_db"
-        }
-      ]
+      "statement_type": "CREATE_TABLE_AS_SELECT"
     }
   },
   {
@@ -1045,19 +612,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "ede91fe9-615f-4877-86b6-65211b1c16d7",
-      "statement_type": "INSERT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "smoke_test_db_4",
-        "table_id": "sharded_table1_20230201"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "smoke_test_db_4",
-          "table_id": "sharded_table1_20230201"
-        }
-      ]
+      "statement_type": "INSERT"
     }
   },
   {
@@ -1071,13 +626,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "07f61a59-999e-4cad-b5d2-e36f3efc3e1c",
-      "statement_type": "CREATE_TABLE",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "smoke_test_db_4",
-        "table_id": "table_with_ingestion_time_partition"
-      },
-      "referenced_tables": []
+      "statement_type": "CREATE_TABLE"
     }
   },
   {
@@ -1091,13 +640,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "35c66a87-c24d-4a84-aaa7-02ad67c7924e",
-      "statement_type": "CREATE_TABLE",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "smoke_test_db_4",
-        "table_id": "table_with_integer_range_partition"
-      },
-      "referenced_tables": []
+      "statement_type": "CREATE_TABLE"
     }
   },
   {
@@ -1111,13 +654,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "6ce6ff3a-80e3-4766-84cf-d285a86ea704",
-      "statement_type": "CREATE_TABLE",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "smoke_test_db_4",
-        "table_id": "table_with_nested_fields"
-      },
-      "referenced_tables": []
+      "statement_type": "CREATE_TABLE"
     }
   },
   {
@@ -1131,19 +668,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "24336324-7714-4ab2-95f4-243f5e54950f",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonf4cce75c_4c8c_4ef2_802e_0f6700b6f877"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1157,19 +682,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "0d6a54d2-102a-418f-a8fe-25cfac92abbe",
-      "statement_type": "CREATE_TABLE_AS_SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "smoke_test_db_4",
-        "table_id": "derived_table_from_sharded_table"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "smoke_test_db_4",
-          "table_id": "sharded_table1_20230101"
-        }
-      ]
+      "statement_type": "CREATE_TABLE_AS_SELECT"
     }
   },
   {
@@ -1183,13 +696,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "89b073c2-bf2b-49b1-a983-9589de5ec524",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonb22d0d582afd566e08144b196aec36622576fdf25b6e74a35e044a5b720ce191"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1203,19 +710,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "2b1929cc-ad64-44f6-9069-e9afbaa3ef2a",
-      "statement_type": "CREATE_TABLE_AS_SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "smoke_test_db_4",
-        "table_id": "derived_table_from_wildcard_table"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "smoke_test_db_4",
-          "table_id": "sharded_table1_*"
-        }
-      ]
+      "statement_type": "CREATE_TABLE_AS_SELECT"
     }
   },
   {
@@ -1229,19 +724,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "0a7899cf-c0ac-4e67-8733-ed6374e7f920",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon2f4ead4a_d35d_445d_8819_ed92bc8748cf"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1255,13 +738,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "4f04684e-202e-4afe-b4df-f813d0925999",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon4db3da963edf09d1d3e6b8dddc9f22960bb56016490ef27620acc390fcf18a27"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1275,13 +752,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "e7014fff-ef9e-4008-88c2-41b5b15c96af",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon84323ce6f50f99cfc5d2e8ad640f3923743cb41a6a759f18a7fce13c7a358d28"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1295,19 +766,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "6266127d-3d3b-4393-97f6-0725079c9f0a",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonf31236fd_fb12_4e4d_9bdf_47983e7013f6"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1321,19 +780,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "3f8a74d1-a74b-4757-a1ae-7ee12580be0f",
-      "statement_type": "CREATE_TABLE_AS_SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "smoke_test_db_4",
-        "table_id": "derived_table_from_external_table"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "smoke_test_db_4",
-          "table_id": "external_table_us_states"
-        }
-      ]
+      "statement_type": "CREATE_TABLE_AS_SELECT"
     }
   },
   {
@@ -1347,19 +794,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "b5fa72b4-4bf8-4ff2-86fc-0e6f762160a7",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon1d72692a_44df_4f8c_9b1c_6aae8a38a887"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1373,13 +808,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "74775f70-cbaa-43b5-8136-a9185f5cec66",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon32e6bd0458339a10581928d131db191eaea3e29936a3454e7946ed8a12f17e38"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1393,13 +822,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "dcd0881c-4027-4585-ae64-95e2efc891a1",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon4db3da963edf09d1d3e6b8dddc9f22960bb56016490ef27620acc390fcf18a27"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1413,13 +836,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "64aadd1d-2596-4600-9452-f67af261c0ea",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonb22d0d582afd566e08144b196aec36622576fdf25b6e74a35e044a5b720ce191"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1433,13 +850,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "8dfe3671-cfac-4bbf-bf17-325bd9a13aa0",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon84323ce6f50f99cfc5d2e8ad640f3923743cb41a6a759f18a7fce13c7a358d28"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1453,19 +864,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "9b8500cf-1c04-4c1e-8a13-e15577e67641",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonc9084373_367a_4390_af54_16f619797096"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1479,13 +878,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "1c014139-8f13-46b9-b440-27259f3b7701",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon84323ce6f50f99cfc5d2e8ad640f3923743cb41a6a759f18a7fce13c7a358d28"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1499,13 +892,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "a8a83a53-e200-4205-8e30-73d11c149e44",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon60e011141b8e3c85fb386e55d995a8290fc3a0896c26ac6d5717f14f5f163947"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1519,19 +906,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "e4aa2fb4-56b5-4515-a50d-75ec31794ff2",
-      "statement_type": "CREATE_TABLE_AS_SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "smoke_test_db_4",
-        "table_id": "derived_table_from_timetravelled_table"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "base_table@1724318908218"
-        }
-      ]
+      "statement_type": "CREATE_TABLE_AS_SELECT"
     }
   },
   {
@@ -1545,24 +920,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "6486765d-2753-477f-9e11-cfcfb6407c8c",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "smoke_test_db_4",
-        "table_id": "destination_table_of_select_query"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "materialized_view_from_table"
-        },
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "base_table"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1576,13 +934,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "d02b0ba9-0c04-47ce-82ae-dd2686458739",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon32e6bd0458339a10581928d131db191eaea3e29936a3454e7946ed8a12f17e38"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1596,19 +948,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "a71ddace-2595-4b3f-a677-258b46409f65",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anone859c132_30c8_476f_8be3_8f7882e8c4d7"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1622,13 +962,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "f78b5ce5-713b-4898-b13f-91b6304c2cce",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon4db3da963edf09d1d3e6b8dddc9f22960bb56016490ef27620acc390fcf18a27"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1642,19 +976,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "87f27258-3890-47d3-97da-75151c67d647",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon6599dcd6_73ba_42e7_b0a3_d9a5985a4ddd"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "customer_demo",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1668,24 +990,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "139c0fa9-cc67-4ec4-85cf-1b9a231f4179",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonac9eceea_3ec8_4740_905e_eeab3bc9b91d"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "base_table"
-        },
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "materialized_view_from_table"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1699,19 +1004,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "9f864017-5753-4a2e-b2cc-53ac789dd9ea",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonf6b6eab6_7da6_451b_923e_cd310a5df0eb"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1725,13 +1018,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "a915c600-d661-432c-9236-df37a7c65c1e",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonb22d0d582afd566e08144b196aec36622576fdf25b6e74a35e044a5b720ce191"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1745,19 +1032,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "8d362768-c6e9-42ee-bbaf-3b114a32d827",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon3c7a5401_2635_4e79_b452_21ede12dacf2"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "customer_demo",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1771,13 +1046,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "450d30ee-719e-43c2-b9f0-4ef252080b54",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon60e011141b8e3c85fb386e55d995a8290fc3a0896c26ac6d5717f14f5f163947"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1791,13 +1060,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "43486ae9-5d58-47a0-98e0-7a064aa634b5",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anondaaf8a98bb16f9b4fd4e7f6ada08bac86581b8e2a25e55399914c155fd8566b7"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1811,19 +1074,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "12049165-b270-4f94-9531-03542fc9f680",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anond6b394e5_9ab5_4d08_a48c_9826e78e05ef"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "partition_test"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1837,19 +1088,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "477cc9dd-ffca-4352-a8ed-ebd1e7c54967",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon00c98d0b_6cbc_4752_8a0b_d0f5bff232fb"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "lineage_from_tmp_table"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1863,19 +1102,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "6c29d65a-fb33-4805-bd32-4a9e00ceee68",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon37cb5eae_6fb4_4f80_a2b5_dcdf18293e5b"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "lineage_from_base"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1889,24 +1116,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "6f142a0e-d71c-40f7-9b76-70080d55638f",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon0026b3be_d07b_4302_b7ca_fe6c2b3ce150"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "base_table"
-        },
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "materialized_view_from_table"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1920,24 +1130,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "6b9755dd-e5e4-4c06-b850-72b02a0c583d",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon264bee95_5a2e_411d_971d_3b15c65475c0"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "materialized_view_from_table"
-        },
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "base_table"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1951,19 +1144,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "978ee15e-fc5f-4464-a288-4a588d10a72b",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon57c90059_bdfe_4f67_a482_8423f135abd5"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "table_from_view"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -1977,19 +1158,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "762a642a-9d71-4ffd-a0af-f1a6f0843643",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon32470674_7f5e_4d81_875c_08afdc7ee994"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "table_from_view_and_table"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2003,13 +1172,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "0ce60fad-0590-4b9d-a333-c0651033c162",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon84323ce6f50f99cfc5d2e8ad640f3923743cb41a6a759f18a7fce13c7a358d28"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2023,19 +1186,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "9e9dcf86-6712-4981-a7a8-7abff832a52b",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon4765d310_ebab_49c6_8edb_2a8b5610bc41"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2049,24 +1200,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "cd5b5b95-41ad-4451-b9c8-f7eedc134b22",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon2173da01_0669_4d20_9814_155ccaf243a7"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "base_table"
-        },
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "materialized_view_from_table"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2080,13 +1214,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "ed85e89b-173a-4acc-8e38-56ac85b501a9",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon4db3da963edf09d1d3e6b8dddc9f22960bb56016490ef27620acc390fcf18a27"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2100,34 +1228,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "cb16a84f-23e3-48f1-9cbd-cd6c1ae2ccdb",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anone6b9ea5f_d7b2_4d88_bce8_67813e1297be"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db_2",
-          "table_id": "table_from_other_db"
-        },
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "lineage_from_base"
-        },
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "materialized_view_from_table"
-        },
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "base_table"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2141,19 +1242,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "13b0be99-04e9-40e9-80fb-3ca54815bcc0",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon02c064af_8ff6_41f5_9a59_ad6b45254529"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db_2",
-          "table_id": "table_from_other_db"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2167,19 +1256,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "ab261d82-f178-44bc-8f16-135a2b7698f0",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon0bf48c7f_6413_4559_9fdd_dc4f0be48c47"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "smoke_test_db_3",
-          "table_id": "base_table_2"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2193,13 +1270,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "107b0124-7754-4d72-8e50-3ed562afdeb7",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonb22d0d582afd566e08144b196aec36622576fdf25b6e74a35e044a5b720ce191"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2213,13 +1284,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "be2fc0f0-13be-44ad-a77c-2d81391f206c",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon60e011141b8e3c85fb386e55d995a8290fc3a0896c26ac6d5717f14f5f163947"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2233,19 +1298,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "573cbacd-aee3-4655-a44c-1d721bcb49ed",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonc7614baf_c661_4d17_aba2_f7b43763a7e2"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "table_from_another_project"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2259,19 +1312,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "7a627727-a4da-45fa-b504-147ea8f7fcf8",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonf45b3a81_0bc1_413b_b39f_04a62fdf41b7"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2285,19 +1326,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "a2089528-786c-4cde-b87b-61a88a17d7fa",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anone3b99b14_5cf1_4a38_97a5_b435d004fcc8"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "smoke_test_db_4",
-          "table_id": "sharded_table1_20230101"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2311,13 +1340,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "9f167fab-f7db-4cce-82d7-8e97c890d9ec",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon60e011141b8e3c85fb386e55d995a8290fc3a0896c26ac6d5717f14f5f163947"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2331,13 +1354,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "3098ddd6-b6a3-45a2-9905-8521bea14486",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon32e6bd0458339a10581928d131db191eaea3e29936a3454e7946ed8a12f17e38"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2351,19 +1368,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "91631d91-6208-4f60-9ba7-8cfe67cb4185",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anoncaea99c4_c2ca_465a_984a_07a359657b86"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2377,13 +1382,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "f93e3148-9c20-4ccb-b7a5-f5608a39a877",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonb22d0d582afd566e08144b196aec36622576fdf25b6e74a35e044a5b720ce191"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2397,19 +1396,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "8e1d105a-52f3-46f9-a4b5-4baa374e4daf",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon01dc59e0_2426_4a26_aa38_abe2a1c214ec"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "smoke_test_db_4",
-          "table_id": "sharded_table1_20230201"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2423,19 +1410,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "6177dad2-5bb9-4512-84da-5a606a8ecde0",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anona85c4226_4415_4833_bd70_f3509f3b647d"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2449,13 +1424,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "f7eac38f-48ec-4f63-8879-1a0ce02e9474",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon60e011141b8e3c85fb386e55d995a8290fc3a0896c26ac6d5717f14f5f163947"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2469,19 +1438,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "a5707bee-8e81-46a3-a714-9c65347f2258",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonf0916716_a817_4feb_9357_09b7219c0890"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "smoke_test_db_4",
-          "table_id": "sharded_table1_*"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2495,19 +1452,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "0b0ac8b9-c9a8-461a-99b1-4408c2468e3d",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon128ef087_3e96_433e_a49c_7c3dbeda89f9"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "partition_test"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2521,19 +1466,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "e7455bfd-9fea-409c-82a0-259088e942a4",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon441d7e56_e71e_4184_b282_50122f28ab8f"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "partition_test"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2547,19 +1480,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "032ad33c-8d21-4fe0-8013-e7f4bfef7b91",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anona0ecfb8a_d416_41c5_92c7_ddeb71cc3872"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "partition_test"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2573,19 +1494,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "b7eab270-0938-40f2-b2c7-9608feb71219",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon1f7efd21_bc80_4a18_b307_46415df75599"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "partition_test"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2599,19 +1508,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "68f63699-3ed3-4b36-b956-a38f9f72d721",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon2a405ce1_4a34_45c2_b741_eb862f9bd688"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "partition_test"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2625,19 +1522,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "83e0e55f-be23-422c-a741-88253937e178",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anona86a38fe_7ba8_4625_bd80_08b83836dc74"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "partition_test"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2651,19 +1536,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "98c3b073-7686-4c4e-9f12-fb18d9d084f5",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonced0b673_cde3_4a7e_85fb_b14a3f15729d"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "partition_test"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2677,19 +1550,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "aa89ab39-11e7-45ce-b9fd-181e8f16843d",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon551db81a_c63c_40b3_b8d5_4ecceabe1c68"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "partition_test"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2703,19 +1564,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "c955f68d-7d2e-4c8d-978b-1b51496390d2",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anone845e07d_3c57_4dad_930c_c9c2eb4e27ad"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "partition_test"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2729,19 +1578,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "4d279f45-7b97-45f8-a263-88e2d8f31bf0",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon6b4e215f_b542_4941_9274_3ba107aa4955"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "partition_test"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2755,19 +1592,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "1bea24f3-644e-4dd4-98d4-5f74d3d3e6d3",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon91770d44_60b5_4727_8f2c_1a4f7ab92866"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "usage_test"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2781,19 +1606,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "1d670ea7-1e10-4952-8beb-5fe77bb8f22e",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonb0bc3965_5bee_4284_92f8_32e838db3f2a"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "usage_test"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2807,19 +1620,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "3eb125df-feca-44c0-9896-326b6c34a3bf",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anone59747e9_b4ff_4ccc_b8ba_f3f92eb85f44"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "usage_test"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2833,19 +1634,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "13e496a2-3160-4bb2-b5d6-b81d61303d8a",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon411f6440_ee8b_4fbe_83f1_e4c99b930da7"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "usage_test"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2859,13 +1648,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "19af6f98-b709-47dc-8358-14e2dcc91894",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonb22d0d582afd566e08144b196aec36622576fdf25b6e74a35e044a5b720ce191"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2879,19 +1662,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "aa6811f2-bfea-4ec3-a7b5-9d70f0475706",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon42e59724_9567_47eb_aa95_c1ec7418902b"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "usage_test"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2905,13 +1676,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "152ed309-796b-4177-b082-82010a4f7e08",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonb22d0d582afd566e08144b196aec36622576fdf25b6e74a35e044a5b720ce191"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2925,19 +1690,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "a1a22c15-873b-453f-80d0-b82b6391d360",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonc5692ab6_b9b1_4294_adaf_9bc23e242801"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2951,13 +1704,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "4e603b0a-2c6d-4c32-acde-0646f680a84f",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon4db3da963edf09d1d3e6b8dddc9f22960bb56016490ef27620acc390fcf18a27"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2971,13 +1718,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "8c807377-da03-4a71-bb46-a191792ff0bf",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon84323ce6f50f99cfc5d2e8ad640f3923743cb41a6a759f18a7fce13c7a358d28"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -2991,19 +1732,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "0502a1a5-bb81-4926-96ca-c6dbf496f3d7",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon02406632_13ec_4bb5_8272_9241dc8485cf"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3017,19 +1746,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "2f1c758f-62a5-45ba-9d2e-769bed74a333",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon8af21009_09ce_4944_a5ad_6a57c73352f1"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "usage_test"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3043,19 +1760,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "2e204e78-a2a1-4b5f-90f2-a0a6662cd4b1",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon28991a9f_ae0c_4016_b1b7_7d9346528fb8"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "smoke_test_db_4",
-          "table_id": "external_table_us_states"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3069,19 +1774,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "3305dfa5-708c-4955-b240-0657bcddaa04",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonfcea9c21_50a4_41c2_82bc_31e8d23874bd"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "smoke_test_db_4",
-          "table_id": "table_with_nested_fields"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3095,19 +1788,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "878f73b2-9ff7-4d40-b8c4-81c72de46922",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon385fe8ae_2321_4782_ac22_9be1ec64a4a2"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "smoke_test_db_4",
-          "table_id": "table_with_ingestion_time_partition"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3121,19 +1802,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "cf03003b-4142-461f-b199-2edb45cda9bf",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anondcc3a621_6750_4415_95c6_7af5662e95cb"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "smoke_test_db_4",
-          "table_id": "table_with_integer_range_partition"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3147,19 +1816,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "771f3da2-a218-456e-a0a1-f22e15410442",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonc39cfdd0_cf93_4e71_98a8_1ecdad5bdad9"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "base_table@1724319011327"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3173,19 +1830,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "c24065c5-8f8e-4aad-a2fa-c856f517a906",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon12a7e0e3_25d3_4121_82ba_8700fa152525"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "smoke_test_db_3",
-          "table_id": "base_table_2@0"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3199,19 +1844,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "66e0e6f8-a780-4755-9f65-c3b51107ef96",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon471d3729_9b83_47b1_80f9_a5a41453441e"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3225,13 +1858,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "279851a7-44ce-477a-8200-3c52dc5d9b1a",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon4db3da963edf09d1d3e6b8dddc9f22960bb56016490ef27620acc390fcf18a27"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3245,13 +1872,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "98febd5c-417d-4d5b-91aa-58ebbccfa2c0",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon84323ce6f50f99cfc5d2e8ad640f3923743cb41a6a759f18a7fce13c7a358d28"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3265,13 +1886,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "ecaf762e-2b22-4abb-9e67-ff6aee05c046",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon84323ce6f50f99cfc5d2e8ad640f3923743cb41a6a759f18a7fce13c7a358d28"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3285,19 +1900,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "9c99e087-c5fb-4a93-bb72-852573578dbe",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anond4824d79_f127_4f96_b17f_17f67aa2859b"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3311,13 +1914,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "ad3a2684-c680-4509-b849-3bcc4f9a7231",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon4db3da963edf09d1d3e6b8dddc9f22960bb56016490ef27620acc390fcf18a27"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3331,13 +1928,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "df8f9856-3809-4b55-afc1-76087191c772",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon4db3da963edf09d1d3e6b8dddc9f22960bb56016490ef27620acc390fcf18a27"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3351,19 +1942,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "b8f9703c-bb4e-43f1-b701-638bacf79f50",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon3bd064cd_a083_47dc_8af1_5794e160f59a"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3377,19 +1956,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "d04d3fb8-bb99-4028-b596-c951ede50ca6",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anone16d436b_d361_45f5_8b54_7f859d609acd"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3403,13 +1970,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "96f20c34-3956-4c47-a13b-c669fc4c7f63",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon60e011141b8e3c85fb386e55d995a8290fc3a0896c26ac6d5717f14f5f163947"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3423,19 +1984,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "6b73759c-3f08-455b-8df2-dd1bc7dc0902",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon08572e99_180f_4e41_9323_7186634593fe"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "customer_demo",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3449,13 +1998,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "01a6c13e-cb18-45f4-b40a-38315a2c6430",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon84323ce6f50f99cfc5d2e8ad640f3923743cb41a6a759f18a7fce13c7a358d28"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3469,13 +2012,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "4fad02be-37dd-4252-89f3-b4d98b674f29",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anondaaf8a98bb16f9b4fd4e7f6ada08bac86581b8e2a25e55399914c155fd8566b7"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3489,19 +2026,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "55c62d69-99af-4040-bff8-e97fadd3cc90",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon10c6bd04_a9f1_4c8d_bcb1_a1b1f2f80a58"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3515,13 +2040,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "14b1ce0b-61c7-4fe9-8d9b-839ef1c3ee06",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonb22d0d582afd566e08144b196aec36622576fdf25b6e74a35e044a5b720ce191"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3535,13 +2054,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "2e5fc864-fc67-416c-9244-448da4e82a78",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon84323ce6f50f99cfc5d2e8ad640f3923743cb41a6a759f18a7fce13c7a358d28"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3555,19 +2068,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "68babe3d-54f6-45ff-8b0b-9da7911dae59",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anoncb8a32f3_1aa6_4da8_9d78_eeb08eb16661"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3581,13 +2082,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "b6c7bb75-35cd-4715-8773-a6abc2f300dc",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon4db3da963edf09d1d3e6b8dddc9f22960bb56016490ef27620acc390fcf18a27"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3601,13 +2096,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "fa4425f7-1d80-42fc-8f90-97a00df580e8",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon84323ce6f50f99cfc5d2e8ad640f3923743cb41a6a759f18a7fce13c7a358d28"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3621,13 +2110,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "b23c1455-ddfa-4064-8323-d39aafb2694e",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon4db3da963edf09d1d3e6b8dddc9f22960bb56016490ef27620acc390fcf18a27"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3641,13 +2124,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "02810b1a-a070-4ab3-b49a-fe0be8bc99ba",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon60e011141b8e3c85fb386e55d995a8290fc3a0896c26ac6d5717f14f5f163947"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3661,19 +2138,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "dfa85a7f-0ff1-4e28-87a1-800574a32c61",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon4f90bad8_7754_4a8e_a9f6_4b468ac7fb4d"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3687,13 +2152,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "7229d1dc-e6e9-4cf4-81b8-8df0152379d8",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon4db3da963edf09d1d3e6b8dddc9f22960bb56016490ef27620acc390fcf18a27"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3707,19 +2166,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "08be753d-4377-43a9-86ec-b6dd147b18a9",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonb802196a_56ec_43df_9453_dc27b67fc1ee"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "customer_demo",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3733,19 +2180,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "361a3095-dfdc-4d2d-af0b-44852398caba",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon4cfceddf_4d07_43d7_8e73_61dc558b48b6"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3759,13 +2194,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "33f0ba19-1925-4063-bb6c-fea0d299f76b",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon60e011141b8e3c85fb386e55d995a8290fc3a0896c26ac6d5717f14f5f163947"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3779,13 +2208,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "f489b9ab-aa90-4ba3-8de8-2e6e2482a15a",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonb22d0d582afd566e08144b196aec36622576fdf25b6e74a35e044a5b720ce191"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3799,19 +2222,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "b5571b2d-602d-4d66-a6cd-77772f72656f",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonb6690e00_3f56_44ac_8ab9_03b7c3c34bbe"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3825,19 +2236,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "c768ca60-e0cb-41dc-8bab-8117d2a8dd54",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon8cc6e9e7_16fd_490b_86e4_dc8c4b60cc22"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3851,13 +2250,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "327849f9-eea0-4428-89ef-7188bafafbc0",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon32e6bd0458339a10581928d131db191eaea3e29936a3454e7946ed8a12f17e38"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3871,19 +2264,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "19e77df4-43aa-4ab5-85d2-e3be1621832b",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon12e0faf9_b2b4_4b8e_acd5_5bda7dc52803"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3897,13 +2278,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "4f21cc35-0ad1-451f-b087-e11e8c469a9c",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon84323ce6f50f99cfc5d2e8ad640f3923743cb41a6a759f18a7fce13c7a358d28"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3917,19 +2292,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "886c3952-b0b6-452e-b7f1-c45ff2c24e67",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonfe55e7f9_741d_441e_a27b_47696d24ccaf"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3943,13 +2306,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "15855ee2-041f-4ab8-9b19-03b080fc884d",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon84323ce6f50f99cfc5d2e8ad640f3923743cb41a6a759f18a7fce13c7a358d28"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3963,13 +2320,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "c88d7780-92b6-4596-8a40-cfa3db95f058",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon4db3da963edf09d1d3e6b8dddc9f22960bb56016490ef27620acc390fcf18a27"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -3983,13 +2334,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "3d6d5760-9b9e-4e73-a638-17779d88233b",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon84323ce6f50f99cfc5d2e8ad640f3923743cb41a6a759f18a7fce13c7a358d28"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4003,13 +2348,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "28199aa8-c5cb-445f-939c-73bb7f49fed7",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon4db3da963edf09d1d3e6b8dddc9f22960bb56016490ef27620acc390fcf18a27"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4023,19 +2362,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "3733cf41-b202-4a72-822d-04298d9fff57",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon8da3cafa_0dc9_4a37_a70a_d066a541b880"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4049,13 +2376,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "9ad989d5-81f0-4a2d-baaf-97064f36dde8",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonb22d0d582afd566e08144b196aec36622576fdf25b6e74a35e044a5b720ce191"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4069,13 +2390,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "68aa5358-09cc-4d2f-a6a5-488c729fbbd3",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon60e011141b8e3c85fb386e55d995a8290fc3a0896c26ac6d5717f14f5f163947"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4089,19 +2404,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "cae21ce5-5c2d-4151-9d35-bcdb799c9cdd",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon2fb5c10b_43b3_40e8_a854_03b63c1b3502"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4115,13 +2418,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "e728c245-07a0-4b19-809b-e44d173b5135",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon84323ce6f50f99cfc5d2e8ad640f3923743cb41a6a759f18a7fce13c7a358d28"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4135,19 +2432,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "cd4e6023-5a4c-4445-99b9-6f7aef393ff1",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anond5cc46f2_7658_4061_8aeb_b2a2dd6688a8"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4161,13 +2446,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "0787f7d7-a643-439b-9442-baa914362c87",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonb22d0d582afd566e08144b196aec36622576fdf25b6e74a35e044a5b720ce191"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4181,19 +2460,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "b31aacd0-b9d7-4ef6-979a-e825fb106c96",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonaaf15c74_96c6_4bb6_91dc_e85b02790c73"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4207,13 +2474,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "9c823051-2be3-4c62-b393-4876ef5af734",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon4db3da963edf09d1d3e6b8dddc9f22960bb56016490ef27620acc390fcf18a27"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4227,13 +2488,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "03321ba7-908e-4acf-b858-648654da4249",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon60e011141b8e3c85fb386e55d995a8290fc3a0896c26ac6d5717f14f5f163947"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4247,19 +2502,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "b7a3bcf4-e5da-4c8b-b61c-b7324e37823c",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon11845a49_abe5_4720_a257_1af0548c3a71"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4273,13 +2516,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "7ef7f8e0-f8c2-4a47-a6b5-e8ebe3fc69b2",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon60e011141b8e3c85fb386e55d995a8290fc3a0896c26ac6d5717f14f5f163947"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4293,13 +2530,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "cd265738-ae52-4e75-a241-682e601b7408",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonb22d0d582afd566e08144b196aec36622576fdf25b6e74a35e044a5b720ce191"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4313,19 +2544,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "709d978b-c616-4ccf-b0bc-46015c7ea201",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon5e97dfab_c9b9_4fb8_bf50_acb06ce77edc"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4339,13 +2558,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "5ef872bb-d3c3-4e6e-87b5-9e1838f38563",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anondaaf8a98bb16f9b4fd4e7f6ada08bac86581b8e2a25e55399914c155fd8566b7"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4359,13 +2572,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "fb84efb3-c71d-4b80-b717-863b22a0bceb",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon60e011141b8e3c85fb386e55d995a8290fc3a0896c26ac6d5717f14f5f163947"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4379,13 +2586,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "de5f59b1-0249-421d-90eb-5103a43b49fd",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonb22d0d582afd566e08144b196aec36622576fdf25b6e74a35e044a5b720ce191"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4399,19 +2600,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "438c4b01-ec53-421a-bc5f-d61ed1edaf7f",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon2c5c1f70_9bc9_41c4_a096_93b8bda0a0e9"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "customer_demo",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4425,13 +2614,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "6ee9b8d0-7767-447f-b333-55d5265d4388",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon84323ce6f50f99cfc5d2e8ad640f3923743cb41a6a759f18a7fce13c7a358d28"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4445,13 +2628,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "b2ffdb5b-52cd-44b9-a2d9-38067e9cd9a4",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon4db3da963edf09d1d3e6b8dddc9f22960bb56016490ef27620acc390fcf18a27"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4465,19 +2642,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "bd6599fe-13b0-4fe8-8981-c307ccd4448d",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon2072d2c5_e133_4b5a_8945_5254588340a3"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4491,19 +2656,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "9c6f7727-ca89-4ad3-b29f-f4cc21b195e2",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anonb0ef55ef_0e63_4138_b8c0_49b113c4ea78"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4517,19 +2670,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "12ffdab3-f7ce-4260-9437-80aacfb42e08",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon2ba3f5b8_331b_4fed_9985_0559a69e5bf5"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "customer_demo",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4543,13 +2684,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "31c7e5fd-c5d3-477b-89b8-74c57c1b0fb9",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon84323ce6f50f99cfc5d2e8ad640f3923743cb41a6a759f18a7fce13c7a358d28"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4563,19 +2698,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "cfb45092-68bb-4be3-8111-dc9533c9bbe2",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon08499120_ac59_47f0_9d7a_5d3b9e2d95c2"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4589,13 +2712,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "e6882b25-dc5e-4d49-a916-ee09d2e4bcc6",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon4db3da963edf09d1d3e6b8dddc9f22960bb56016490ef27620acc390fcf18a27"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4609,13 +2726,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "d916df78-aca9-4365-aa7e-32cc56929771",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon4db3da963edf09d1d3e6b8dddc9f22960bb56016490ef27620acc390fcf18a27"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4629,13 +2740,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "08737edb-28ad-4dde-887e-c6c4054d94ef",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon84323ce6f50f99cfc5d2e8ad640f3923743cb41a6a759f18a7fce13c7a358d28"
-      },
-      "referenced_tables": []
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4649,19 +2754,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "914aafd8-5543-42d5-b21b-92df47c28268",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon4cd2e7fe_9f6f_4a6c_9c92_ff521c7caa99"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4675,19 +2768,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "177a3d11-f04f-4819-9b67-555b3190af6a",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging",
-        "dataset_id": "_283d0dc3d7613bc3d88b6692661164402822056f",
-        "table_id": "anon2f5817f8_15ba_4df7_83c9_412d70c62fce"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "dataset_as_sharded_table",
-          "table_id": "__TABLES__"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4701,24 +2782,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "1b9741fb-0693-4371-acd0-e7c77a775aa0",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "_9b92e769ee331eccc38faf408e659980e15ac5cb",
-        "table_id": "anona358818e_bfc6_4373_b610_778f49467cef"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "base_table"
-        },
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "materialized_view_from_table"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4732,19 +2796,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "c2cec833-2d60-42b0-994b-604ec92a88ae",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "_9b92e769ee331eccc38faf408e659980e15ac5cb",
-        "table_id": "anonbcd279fa_10aa_422d_a999_2383b3e8c932"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "partition_test"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4758,19 +2810,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "ac0b567c-b711-489e-93ea-1a4696055163",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "_9b92e769ee331eccc38faf408e659980e15ac5cb",
-        "table_id": "anonc046b2fa_61f1_48da_9df1_5e517b6b1901"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "lineage_from_tmp_table"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4784,19 +2824,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "8ea9e3a5-4ef2-4665-8ad2-c5aeaf4ce063",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "_9b92e769ee331eccc38faf408e659980e15ac5cb",
-        "table_id": "anone04f0dcf_9a17_4be8_92c4_92b31811d167"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "lineage_from_base"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4810,24 +2838,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "1bf06f7f-1d21-413e-b26a-ca4569586cb4",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "_9b92e769ee331eccc38faf408e659980e15ac5cb",
-        "table_id": "anon59fa6fb5_e019_4328_8f23_01f38f7b5e3a"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "materialized_view_from_table"
-        },
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "base_table"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4841,24 +2852,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "3e577d7c-7ccc-4be8-a19e-e1399fabee69",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "_9b92e769ee331eccc38faf408e659980e15ac5cb",
-        "table_id": "anon6d70c7aa_a77d_402a_96e0_414de3d1c7fb"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "materialized_view_from_table"
-        },
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "base_table"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4872,19 +2866,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "35d712b5-ce79-43db-98bb-52b6363a5ef3",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "_9b92e769ee331eccc38faf408e659980e15ac5cb",
-        "table_id": "anonb6ff5e62_e4b7_4f9a_8fa7_7e86d3a6a7e4"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "table_from_view"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4898,19 +2880,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "cb805273-1313-45d0-af6d-fa6d9b3d8b56",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "_9b92e769ee331eccc38faf408e659980e15ac5cb",
-        "table_id": "anon50fed9a7_008c_4405_b22f_f93efccda484"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "table_from_view_and_table"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4924,24 +2894,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "32825ee8-28b7-4670-9296-1b67d8978bf6",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "_9b92e769ee331eccc38faf408e659980e15ac5cb",
-        "table_id": "anona7c9b810_373e_4102_8b6c_74622dbddb92"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "materialized_view_from_table"
-        },
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "base_table"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4955,34 +2908,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "1d8c6501-d09c-4540-b62c-0960c6ce4461",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "_9b92e769ee331eccc38faf408e659980e15ac5cb",
-        "table_id": "anone4cf1322_c0a3_4178_85fe_ed3d25a86cf5"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "base_table"
-        },
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "lineage_from_base"
-        },
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db_2",
-          "table_id": "table_from_other_db"
-        },
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "materialized_view_from_table"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -4996,19 +2922,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "95c21bb0-9a17-4dde-8198-bde46c52d98e",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "_9b92e769ee331eccc38faf408e659980e15ac5cb",
-        "table_id": "anone376867c_5467_4841_803a_4a547f3ba08b"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db_2",
-          "table_id": "table_from_other_db"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -5022,19 +2936,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "cf9d8407-934c-4b98-8fcf-be51bd5fc4b2",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "_9b92e769ee331eccc38faf408e659980e15ac5cb",
-        "table_id": "anone0788f93_2e16_4300_b94c_f86eee9758c2"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "smoke_test_db_3",
-          "table_id": "base_table_2"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -5048,19 +2950,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "72249ae6-3035-4698-ad2f-54f0f6f58976",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "_9b92e769ee331eccc38faf408e659980e15ac5cb",
-        "table_id": "anon2608c050_7916_471e_8ba3_c9e004e22daa"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "table_from_another_project"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -5074,19 +2964,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "7ad97142-5030-4723-ae8c-e48f0dc74d34",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "_9b92e769ee331eccc38faf408e659980e15ac5cb",
-        "table_id": "anon118ffa8c_5d72_4f8d_b022_b7d7d5e679e2"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "smoke_test_db_4",
-          "table_id": "sharded_table1_20230101"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -5100,19 +2978,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "1a903e95-526f-4f2a-b7bb-cf85559557cd",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "_9b92e769ee331eccc38faf408e659980e15ac5cb",
-        "table_id": "anon5e1130d1_930c_4a12_9c21_7c00388ee11f"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "smoke_test_db_4",
-          "table_id": "sharded_table1_20230201"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -5126,19 +2992,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "1489ced3-a8db-42f0-b6c1-0b23c2e042e7",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "_9b92e769ee331eccc38faf408e659980e15ac5cb",
-        "table_id": "anon89622e5a_c0f9_469b_9a9a_2379cac465b6"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "smoke_test_db_4",
-          "table_id": "sharded_table1_*"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -5152,19 +3006,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "d6479b3a-694b-4271-aa3c-3be5e8b8f7c6",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "_9b92e769ee331eccc38faf408e659980e15ac5cb",
-        "table_id": "anon9717e692_a817_40f3_8f8c_d2af76a4eed9"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "partition_test"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -5178,19 +3020,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "0e5a166c-4018-4585-a341-a40585343818",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "_9b92e769ee331eccc38faf408e659980e15ac5cb",
-        "table_id": "anon3453f1d1_c634_4273_b472_c72fac89f718"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "partition_test"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -5204,19 +3034,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "a36c8702-c796-4173-a19a-6b072c5064aa",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "_9b92e769ee331eccc38faf408e659980e15ac5cb",
-        "table_id": "anond9168686_8f61_47f7_9546_d97b9daf573b"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "partition_test"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -5230,19 +3048,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "2360b8ad-4e69-45ac-9294-a528634219b3",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "_9b92e769ee331eccc38faf408e659980e15ac5cb",
-        "table_id": "anon0bff271e_f2e5_4dd8_ba72_3996ab9a4fbf"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "usage_test"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -5256,19 +3062,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "68464689-cf31-4cee-87cc-9cf96db96285",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "_9b92e769ee331eccc38faf408e659980e15ac5cb",
-        "table_id": "anonced1fae9_3dcb_40ba_a69c_ae6d75133e97"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "usage_test"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -5282,19 +3076,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "277b376a-186b-40aa-a64b-34940ed9d5e1",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "_9b92e769ee331eccc38faf408e659980e15ac5cb",
-        "table_id": "anon27185a25_2daf_481f_8c43_20fbac91241b"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "usage_test"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -5308,19 +3090,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "f7010dd4-4fd8-42eb-a973-844a161d73ac",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "_9b92e769ee331eccc38faf408e659980e15ac5cb",
-        "table_id": "anon1fd96c89_d1e8_44f4_b714_bdf425f3920a"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "usage_test"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -5334,19 +3104,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "8bd62522-3803-431d-8970-caf0c9f64726",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "_9b92e769ee331eccc38faf408e659980e15ac5cb",
-        "table_id": "anon026ba4a8_61fe_40e0_bbac_c2745e7e989b"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "usage_test"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -5360,19 +3118,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "51df8223-866e-4322-9c1c-a91c808a37b0",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "_9b92e769ee331eccc38faf408e659980e15ac5cb",
-        "table_id": "anoncbdc907d_def4_4170_a5e2_537bc2cadcfc"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging",
-          "dataset_id": "smoke_test_db",
-          "table_id": "base_table@1724319012792"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   },
   {
@@ -5386,19 +3132,7 @@
     "usage_multiplier": 1,
     "extra_info": {
       "job_id": "58a71429-22f4-4251-a4a0-f5370f1caadd",
-      "statement_type": "SELECT",
-      "destination_table": {
-        "project_id": "gcp-staging-2",
-        "dataset_id": "_9b92e769ee331eccc38faf408e659980e15ac5cb",
-        "table_id": "anon5be4a9ee_7236_4a08_8e69_62eee0161075"
-      },
-      "referenced_tables": [
-        {
-          "project_id": "gcp-staging-2",
-          "dataset_id": "smoke_test_db_3",
-          "table_id": "base_table_2@0"
-        }
-      ]
+      "statement_type": "SELECT"
     }
   }
 ]
