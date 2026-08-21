@@ -89,8 +89,6 @@ class BigQueryJob(TypedDict):
 
     statement_type: str
     destination_table: Optional[BigQueryTableReference]
-    referenced_tables: List[BigQueryTableReference]
-    # NOTE: This does not capture referenced_view unlike GCP Logging Event
 
 
 class BigQueryQueriesExtractorConfig(BigQueryBaseConfig):
@@ -566,8 +564,6 @@ class BigQueryQueriesExtractor(Closeable):
             extra_info={
                 "job_id": row["job_id"],
                 "statement_type": row["statement_type"],
-                "destination_table": row["destination_table"],
-                "referenced_tables": row["referenced_tables"],
             },
         )
 
@@ -937,7 +933,6 @@ def _build_enriched_query_log_query(
             query_info.query_hashes.normalized_literals as query_hash,
             statement_type,
             destination_table,
-            referenced_tables
         FROM
             `{project_id}`.`{region}`.INFORMATION_SCHEMA.JOBS
         WHERE
