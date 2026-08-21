@@ -383,7 +383,8 @@ class BigQueryQueriesExtractor(Closeable):
             # Note: FileBackedDict is an ordered dictionary, so the order of execution of
             # queries is inherently maintained
             queries_deduped: FileBackedDict[ObservedQuery] = self.deduplicate_queries(
-                queries
+                queries,
+                shared_connection,
             )
             self.report.num_unique_queries = len(queries_deduped)
             logger.info(f"Found {self.report.num_unique_queries} unique queries")
@@ -413,7 +414,9 @@ class BigQueryQueriesExtractor(Closeable):
         self._update_state()
 
     def deduplicate_queries(
-        self, queries: FileBackedList[ObservedQuery]
+        self,
+        queries: FileBackedList[ObservedQuery],
+        shared_connection: ConnectionWrapper,
     ) -> FileBackedDict[ObservedQuery]:
         # This fingerprint based deduplication is done here to reduce performance hit due to
         # repetitive sql parsing while adding observed query to aggregator that would otherwise
@@ -421,7 +424,10 @@ class BigQueryQueriesExtractor(Closeable):
         # With current implementation, it is possible that "Operation"(e.g. INSERT) is reported
         # only once per day, although it may have happened multiple times throughout the day.
 
-        queries_deduped: FileBackedDict[ObservedQuery] = FileBackedDict()
+        queries_deduped: FileBackedDict[ObservedQuery] = FileBackedDict(
+            shared_connection=shared_connection,
+            tablename="queries_deduped",
+        )
 
         for i, query in enumerate(queries):
             if i > 0 and i % 10000 == 0:
