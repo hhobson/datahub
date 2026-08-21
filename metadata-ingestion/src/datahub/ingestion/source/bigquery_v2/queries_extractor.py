@@ -382,8 +382,8 @@ class BigQueryQueriesExtractor(Closeable):
             # Preprocessing stage that deduplicates the queries using query hash per usage bucket
             # Note: FileBackedDict is an ordered dictionary, so the order of execution of
             # queries is inherently maintained
-            queries_deduped: FileBackedDict[Dict[int, ObservedQuery]] = (
-                self.deduplicate_queries(queries)
+            queries_deduped: FileBackedDict[ObservedQuery] = self.deduplicate_queries(
+                queries
             )
             self.report.num_unique_queries = len(queries_deduped)
             logger.info(f"Found {self.report.num_unique_queries} unique queries")
@@ -392,17 +392,16 @@ class BigQueryQueriesExtractor(Closeable):
             log_timer = ProgressTimer(timedelta(minutes=1))
             report_timer = ProgressTimer(timedelta(minutes=5))
 
-            for i, (_, query_instances) in enumerate(queries_deduped.items()):
-                for query in query_instances.values():
-                    if log_timer.should_report():
-                        logger.info(
-                            f"Added {i} deduplicated query log entries to SQL aggregator"
-                        )
+            for i, (_, query) in enumerate(queries_deduped.items()):
+                if log_timer.should_report():
+                    logger.info(
+                        f"Added {i} deduplicated query log entries to SQL aggregator"
+                    )
 
                     if report_timer.should_report() and self.report.sql_aggregator:
                         logger.info(self.report.sql_aggregator.as_string())
 
-                    self.aggregator.add(query)
+                self.aggregator.add(query)
 
         yield from auto_workunit(self.aggregator.gen_metadata())
 
@@ -415,14 +414,14 @@ class BigQueryQueriesExtractor(Closeable):
 
     def deduplicate_queries(
         self, queries: FileBackedList[ObservedQuery]
-    ) -> FileBackedDict[Dict[int, ObservedQuery]]:
+    ) -> FileBackedDict[ObservedQuery]:
         # This fingerprint based deduplication is done here to reduce performance hit due to
         # repetitive sql parsing while adding observed query to aggregator that would otherwise
         # parse same query multiple times. In future, aggregator may absorb this deduplication.
         # With current implementation, it is possible that "Operation"(e.g. INSERT) is reported
         # only once per day, although it may have happened multiple times throughout the day.
 
-        queries_deduped: FileBackedDict[Dict[int, ObservedQuery]] = FileBackedDict()
+        queries_deduped: FileBackedDict[ObservedQuery] = FileBackedDict()
 
         for i, query in enumerate(queries):
             if i > 0 and i % 10000 == 0:
@@ -441,14 +440,15 @@ class BigQueryQueriesExtractor(Closeable):
                 query.query, self.identifiers.platform, fast=True
             )
 
-            query_instances = queries_deduped.setdefault(query.query_hash, {})
+            dedup_key = f"{query.query_hash}:{time_bucket}"
 
-            observed_query = query_instances.setdefault(time_bucket, query)
-
-            # If the query already exists for this time bucket, update its attributes
-            if observed_query is not query:
-                observed_query.usage_multiplier += 1
-                observed_query.timestamp = query.timestamp
+            if dedup_key in queries_deduped:
+                # If the query already exists for this time bucket, update its attributes
+                existing = queries_deduped.for_mutation(dedup_key)
+                existing.usage_multiplier += 1
+                existing.timestamp = query.timestamp
+            else:
+                queries_deduped[dedup_key] = query
 
         return queries_deduped
 
